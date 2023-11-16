@@ -1,0 +1,458 @@
+:root {
+  --background-color: #FFFFFF;
+  --title-color: #008ECC;
+  --products-title-color: #666666;
+  --description-color: #8F8B8B;
+  --rating-color: #2B32DC;
+  --price-color: #249B3E;
+  --card-text-color: #222222;
+  --card-background-color: #F5F5F5;
+  --search-backgrounud-color: #F3F9FB;
+  --modal-background-color: #949494c4;
+  --border-bottom-color: #ebebeb;
+  --border-color: #EDEDED;
+  --category-border-color: #DDDCDC;
+  --search-text-color: #222222;
+  --shadow-color: rgba(0, 0, 0, 0.24);
+  --image-content-color: #FFFFFF;
+}
+
+html[data-theme=light] {
+  --background-color: #FFFFFF;
+  --title-color: #008ECC;
+  --products-title-color: #666666;
+  --description-color: #8F8B8B;
+  --rating-color: #2B32DC;
+  --price-color: #249B3E;
+  --card-text-color: #222222;
+  --card-background-color: #F5F5F5;
+  --search-backgrounud-color: #F3F9FB;
+  --modal-background-color: #949494c4;
+  --border-bottom-color: #ebebeb;
+  --border-color: #EDEDED;
+  --category-border-color: #DDDCDC;
+  --search-text-color: #222222;
+  --shadow-color: rgba(0, 0, 0, 0.24);
+  --image-content-color: #FFFFFF;
+}
+
+html[data-theme=dark] {
+  --background-color: #222222;
+  --title-color: #008ECC;
+  --products-title-color: #ffffff;
+  --description-color: #c2c2c2;
+  --rating-color: #2B32DC;
+  --price-color: #249B3E;
+  --card-text-color: #ffffff;
+  --card-background-color: #222222;
+  --search-backgrounud-color: #16566b;
+  --modal-background-color: #949494c4;
+  --border-bottom-color: #ebebeb;
+  --border-color: #EDEDED;
+  --category-border-color: #DDDCDC;
+  --search-text-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.24);
+  --image-content-color: #ffffff;
+}
+
+.app-container {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+}
+.app-container .app-header {
+  width: 1440;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 118px;
+  padding-right: 118px;
+  padding-top: 20px;
+  direction: horizontal;
+  border-bottom: var(--border-bottom-color);
+  border-bottom-width: 1.5px;
+  border-bottom-style: solid;
+}
+.app-container .app-header .app-brand {
+  height: 39px;
+  width: 138px;
+  color: var(--title-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+}
+.app-container .app-header .app-menu {
+  display: flex;
+  align-items: center;
+}
+.app-container .app-header .app-menu .app-cart-content {
+  display: flex;
+}
+.app-container .app-header .app-menu .app-cart-content .app-cart {
+  color: var(--products-title-color);
+  font-size: 16px;
+  margin-left: 6px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.app-container .app-header .app-menu .app-theme-language-content {
+  margin-left: 20px;
+}
+.app-container .app-header .app-menu .app-theme-language-content .app-language-dropdpwn {
+  border-radius: 5px;
+  outline: 0px;
+  border-width: 0px;
+  width: 100px;
+  height: 35px;
+  background-color: var(--background-color);
+  color: var(--card-text-color);
+  border-bottom-color: var(--border-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.app-container .app-header .app-menu .app-theme-language-content .app-light-button {
+  margin-left: 6px;
+  background-color: var(--background-color);
+  color: var(--card-text-color);
+  border-bottom-color: var(--border-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.app-container .app-header .app-menu .app-theme-language-content .app-dark-button {
+  background-color: var(--background-color);
+  color: var(--card-text-color);
+  border-bottom-color: var(--border-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.app-container .app-pesquisa-produtos {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+.app-container .app-pesquisa-produtos .app-pesquisa-titulo {
+  display: flex;
+  align-items: center;
+  background-color: var(--search-backgrounud-color);
+  border-radius: 8px;
+  height: 43px;
+  width: 64%;
+}
+.app-container .app-pesquisa-produtos .app-pesquisa-titulo .app-pesquisa-search {
+  color: var(--search-text-color);
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-left: 14px;
+}
+.app-container .app-pesquisa-produtos .app-pesquisa-titulo .app-pesquisa-input {
+  background-color: var(--search-backgrounud-color);
+  color: var(--search-text-color);
+  height: 43px;
+  width: 85%;
+  border-width: 0px;
+  border-radius: 8px;
+  margin-left: 5px;
+  outline: 0px;
+}
+.app-container .app-pesquisa-produtos .app-pesquisa-category {
+  background-color: var(--search-backgrounud-color);
+  color: var(--search-text-color);
+  margin-left: 14px;
+  padding-left: 14px;
+  border-radius: 18px;
+  outline: 0px;
+  border-width: 0px;
+  width: 21%;
+  height: 43px;
+}
+.app-container .app-pesquisa-produtos .app-pesquisa-dropdown {
+  margin-left: 14px;
+  padding-left: 14px;
+  margin-left: 10px;
+  background-color: var(--search-backgrounud-color);
+  color: var(--search-text-color);
+  height: 43px;
+  width: 9%;
+  outline: 0px;
+  border-width: 0px;
+  border-radius: 18px;
+}
+.app-container .app-titulo-produtos {
+  border-bottom: var(--border-bottom-color);
+  border-bottom-width: 1.5px;
+  border-bottom-style: solid;
+  margin-left: 118px;
+  margin-right: 118px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.app-container .app-titulo-produtos .app-titulo-produtos-principal {
+  color: var(--products-title-color);
+  border-bottom: var(--title-color);
+  width: 30%;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+.app-container .app-catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 4rem;
+  pointer-events: all;
+}
+.app-container .app-catalogo .app-card {
+  background-color: var(--card-background-color) !important;
+  height: 450px !important;
+  width: 245px !important;
+  box-shadow: var(--shadow-color) 0px 8px 10px !important;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: var(--border-color) !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  cursor: pointer;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.app-container .app-catalogo .app-card:hover {
+  transform: scale(1.05);
+}
+.app-container .app-catalogo .app-card .app-card-image-content {
+  background-color: var(--image-content-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container .app-catalogo .app-card .app-card-image-content .app-card-image {
+  width: 110px;
+  height: 150px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.app-container .app-catalogo .app-card .app-card-infos {
+  width: 100%;
+  border-bottom: var(--border-color);
+  border-bottom-width: 1.5px;
+  border-bottom-style: solid;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.app-container .app-catalogo .app-card .app-card-infos .app-card-title {
+  color: var(--card-text-color);
+  padding-top: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 85px;
+  margin: 0px;
+}
+.app-container .app-catalogo .app-card .app-card-infos .app-card-category {
+  color: var(--card-text-color);
+  margin: 11px;
+  border: var(--category-border-color);
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+}
+.app-container .app-catalogo .app-card .app-card-infos .app-card-category .app-card-category-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--description-color);
+}
+.app-container .app-catalogo .app-card .app-card-infos .app-card-rating-stars .icon {
+  background: transparent;
+  color: var(--card-background-color);
+  text-shadow: 0.5px -0.5px 0 var(--rating-color), -0.5px 0.5px 0 var(--rating-color), -0.5px -0.5px 0 var(--rating-color), 0.5px 0 0 var(--rating-color), -0.5px 0 0 var(--rating-color), 0 0.5px 0 var(--rating-color), 0 -0.5px 0 var(--rating-color), 0.5px 0.5px 0 var(--rating-color);
+}
+.app-container .app-catalogo .app-card .app-card-infos .app-card-rating-stars .active.icon {
+  background: transparent;
+  color: var(--rating-color);
+}
+.app-container .app-catalogo .app-card .app-card-infos .app-card-rate {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: var(--rating-color);
+}
+.app-container .app-catalogo .app-card .app-card-infos .app-card-count {
+  color: var(--description-color);
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.app-container .app-catalogo .app-card .app-card-price {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  color: var(--price-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.app-container .app-card-modal-background {
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: var(--modal-background-color);
+  align-items: center;
+  justify-content: center;
+}
+.app-container .app-card-modal-background .app-card-modal {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  position: fixed;
+  height: 463px;
+  width: 1094px;
+  background-color: var(--background-color);
+  border: var(--border-color);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 16px;
+  box-shadow: var(--shadow-color) 0px 8px 10px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-image-background {
+  background-color: var(--image-content-color);
+  height: 462px;
+  border: var(--image-content-color);
+  border-width: 1px;
+  border-style: solid;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-right: 20px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-image-background .app-card-modal-image-content {
+  width: 250px;
+  margin-left: 65px;
+  margin-top: 40px;
+  margin-right: 31px;
+  background-color: var(--image-content-color);
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-image-background .app-card-modal-image-content .app-card-modal-image {
+  width: 250px;
+  height: 380px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos {
+  padding-top: 32px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos .app-card-modal-infos-firts {
+  border-bottom: var(--border-bottom-color);
+  border-bottom-width: 1.5px;
+  border-bottom-style: solid;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos .app-card-modal-infos-firts .app-card-modal-title {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: var(--card-text-color);
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos .app-card-modal-infos-firts .app-card-modal-rating {
+  display: flex;
+  align-items: center;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos .app-card-modal-infos-firts .app-card-modal-rating .app-modal-rating-stars .icon {
+  background: transparent;
+  color: var(--background-color);
+  text-shadow: 0.5px -0.5px 0 var(--rating-color), -0.5px 0.5px 0 var(--rating-color), -0.5px -0.5px 0 var(--rating-color), 0.5px 0 0 var(--rating-color), -0.5px 0 0 var(--rating-color), 0 0.5px 0 var(--rating-color), 0 -0.5px 0 var(--rating-color), 0.5px 0.5px 0 var(--rating-color);
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos .app-card-modal-infos-firts .app-card-modal-rating .app-modal-rating-stars .active.icon {
+  background: transparent;
+  color: var(--rating-color);
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos .app-card-modal-infos-firts .app-card-modal-rating .app-card-modal-rate {
+  color: var(--rating-color);
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos .app-card-modal-infos-firts .app-card-modal-count {
+  color: var(--description-color);
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-infos .app-card-modal-infos-firts .app-card-modal-price {
+  color: var(--price-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 32px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-description {
+  color: var(--description-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-category {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  height: 28px;
+  width: 203px;
+  background-color: var(--background-color);
+  border: var(--category-border-color);
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  text-align: center;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-category .app-card-modal-category-text {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: var(--description-color);
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-buy-button {
+  color: var(--image-content-color);
+  height: 43px;
+  width: 261px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  width: 40%;
+  background-color: var(--rating-color);
+  border: var(--category-border-color);
+  border-style: solid;
+  border-radius: 18px;
+  border-width: 1px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: medium;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-buy-button:hover {
+  cursor: pointer;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-close-icon {
+  height: 8px !important;
+  width: 8px !important;
+  border-width: 1px;
+  padding-top: 15px;
+  padding-right: 30px;
+}
+.app-container .app-card-modal-background .app-card-modal .app-card-modal-close-icon:hover {
+  cursor: pointer;
+}
+.app-container .app-footer {
+  background: var(--title-color);
+  padding: 0.5rem;
+  text-align: center;
+  line-height: 10rem;
+  height: 11rem;
+  margin-top: 15rem;
+}
+.app-container .app-footer .app-footer-message {
+  color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=components.css.map */
